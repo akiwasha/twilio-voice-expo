@@ -7,7 +7,8 @@ buildscript {
     'androidxCore'       : '1.12.0',
     'androidxLifecycle'  : '2.2.0',
     'audioSwitch'        : '1.2.2',
-    'firebaseMessaging'  : '23.4.0'
+    'firebaseMessaging'  : '23.4.0',
+    "kotlin": "1.9.24"
   ]
   if (project == rootProject) {
     repositories {
