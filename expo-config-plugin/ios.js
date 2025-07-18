@@ -1,4 +1,7 @@
-const { withInfoPlist, withEntitlements } = require('@expo/config-plugins');
+const {
+  withInfoPlist,
+  withEntitlementsPlist,
+} = require('@expo/config-plugins');
 
 function withTwilioVoiceIOS(config) {
   // Ajouter les permissions nécessaires
@@ -10,7 +13,7 @@ function withTwilioVoiceIOS(config) {
   });
 
   // Ajouter les entitlements VoIP
-  config = withEntitlements(config, (config) => {
+  config = withEntitlementsPlist(config, (config) => {
     config.modResults['com.apple.developer.pushkit'] = ['voip'];
     return config;
   });
