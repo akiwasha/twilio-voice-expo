@@ -14,7 +14,7 @@ function withTwilioVoiceIOS(config) {
 
   // Ajouter les entitlements VoIP
   config = withEntitlementsPlist(config, (config) => {
-    config.modResults['com.apple.developer.pushkit'] = ['voip'];
+    config.modResults['aps-environment'] = ['development'];
     return config;
   });
 
