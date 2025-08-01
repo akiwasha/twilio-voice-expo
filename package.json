@@ -72,6 +72,7 @@
     "eslint": "^7.2.0",
     "eslint-config-prettier": "^7.0.0",
     "eslint-plugin-prettier": "^3.1.3",
+    "expo": "^53.0.0",
     "express": "^4.19.2",
     "husky": "^4.2.5",
     "jest": "^28.1.3",
@@ -88,7 +89,7 @@
   "peerDependencies": {
     "react": "*",
     "react-native": "*",
-    "expo-modules-core": ">=1.0.0"
+    "expo": ">=53.0.0"
   },
   "jest": {
     "preset": "react-native",
