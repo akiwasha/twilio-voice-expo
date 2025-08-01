@@ -87,7 +87,8 @@
   },
   "peerDependencies": {
     "react": "*",
-    "react-native": "*"
+    "react-native": "*",
+    "expo-modules-core": ">=1.0.0"
   },
   "jest": {
     "preset": "react-native",
