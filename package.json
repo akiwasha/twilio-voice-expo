@@ -1,5 +1,5 @@
 {
-  "name": "@akiwasha/twilio-voice-expo",
+  "name": "twilio-voice-expo",
   "version": "1.7.1-expo.1",
   "description": "Expo compatible fork of the official Twilio Voice React Native SDK",
   "main": "lib/commonjs/index",
