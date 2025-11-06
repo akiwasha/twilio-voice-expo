@@ -19,11 +19,13 @@ buildscript {
     dependencies {
       classpath "com.android.tools.build:gradle:${versions.androidGradlePlugin}"
       classpath "com.google.gms:google-services:${versions.googleServices}"
+      classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:${versions.kotlin}"
     }
   }
 }
 
 apply plugin: 'com.android.library'
+apply plugin: 'kotlin-android'
 
 def safeExtGet(prop, fallback) {
   rootProject.ext.has(prop) ? rootProject.ext.get(prop) : fallback
