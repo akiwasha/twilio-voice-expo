@@ -7,7 +7,8 @@ buildscript {
     'androidxCore'       : '1.12.0',
     'androidxLifecycle'  : '2.2.0',
     'audioSwitch'        : '1.2.2',
-    'firebaseMessaging'  : '23.4.0'
+    'firebaseMessaging'  : '23.4.0',
+    'kotlin': '1.9.24'
   ]
   if (project == rootProject) {
     repositories {
@@ -72,8 +73,11 @@ dependencies {
   implementation "androidx.core:core:${versions.androidxCore}"
   implementation "androidx.lifecycle:lifecycle-extensions:${versions.androidxLifecycle}"
   implementation "com.google.firebase:firebase-messaging:${versions.firebaseMessaging}"
-  implementation "com.twilio:audioswitch:${versions.audioSwitch}"
+  // implementation "com.twilio:audioswitch:${versions.audioSwitch}"
+  implementation 'com.github.davidliu:audioswitch:89582c47c9a04c62f90aa5e57251af4800a62c9a'
   implementation 'com.google.android.material:material:1.1.0'
+  implementation "org.jetbrains.kotlin:kotlin-stdlib:${versions.kotlin}"
+  implementation project(':expo-modules-core')
 
   constraints {
     implementation("org.jetbrains.kotlin:kotlin-stdlib-jdk7:1.8.0") {
