@@ -14,6 +14,8 @@
     "ios",
     "cpp",
     "twilio-voice-react-native.podspec",
+    "expo-config-plugin",
+    "expo-module.config.json",
     "!lib/typescript/test/app",
     "!android/build",
     "!ios/build",
@@ -45,7 +47,7 @@
     "android"
   ],
   "repository": "https://github.com/akiwasha/twilio-voice-expo",
-  "author": "Michael Huynh <mhuynh@twilio.com> (https://github.com/twilio)",
+  "author": "Piere-Laurent Vincent (https://github.com/akiwasha)",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/akiwasha/twilio-voice-expo/issues"
